@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<!--HTML5 doctype-->
+<html>
+
+ <head>
+  <link rel="stylesheet" type="text/css" href="media_button_bar/css/media_button_bar.css">
+  <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="css/index_main.less.css" class="main-less">
+  <title>Your New Application</title>
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+  <style type="text/css">
+   /* Prevent copy paste for all elements except text fields */
+   		*  { -webkit-user-select:none; -webkit-tap-highlight-color:rgba(255, 255, 255, 0); }
+   		input, textarea  { -webkit-user-select:text; }
+  </style>
+  <script src="intelxdk.js"></script>
+  <script type="text/javascript">
+   /* This code is used to run as soon as Intel activates */
+   		var onDeviceReady=function(){
+   		//hide splash screen
+   		intel.xdk.device.hideSplashScreen();
+   		};
+   		document.addEventListener("intel.xdk.device.ready",onDeviceReady,false);
+  </script>
+  <script type="application/javascript" src="js/jquery.min.js"></script>
+  <script type="application/javascript" src="marginal/marginal-position.min.js"></script>
+  <script type="application/javascript" src="sidebar/js/jquery.event.move.js"></script>
+  <script type="application/javascript" src="sidebar/js/jquery.event.swipe.js"></script>
+  <script type="application/javascript" src="sidebar/js/sidebar.js"></script>
+  <script type="application/javascript" src="sidebar/js/swipe.js"></script>
+  <script type="application/javascript" src="js/index_user_scripts.js"></script>
+  <script type="application/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+ </head>
+
+ <body>
+  <!-- content goes here-->
+  <div class="uwrap">
+   <div class="upage" id="mainpage">
+    <div class="upage-outer">
+
+     <div class="upage-content" id="mainsub">
+
+      <div class="grid grid-pad urow uib_row_2 row-height-2" data-uib="layout/row" data-ver="0">
+       <div class="col uib_col_2 col-0" data-uib="layout/col" data-ver="0">
+        <div class="widget-container content-area vertical-col">
+
+
+         <div role="navigation" class="navbar navbar-default full-width-widget widget uib_w_10 d-margins" data-uib="twitter%20bootstrap/navbar"
+         data-ver="0">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-navbar-0">
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+          </button><a class="navbar-brand" href="">Transactions Printing</a>
+
+          <div id="bs-navbar-0" class="navbar-collapse collapse">
+           <ul class="nav navbar-nav">
+
+           </ul>
+          </div>
+         </div>
+         <div class="widget uib_w_8 d-margins iframe-size" data-uib="media/iframe" data-ver="0">
+          <iframe seamless="seamless" src="http://localhost/MyAcctgSys_Web/(03)MyAPI_Web/MyTransactions_Printing/Default.php"></iframe>
+         </div><span class="uib_shim"></span>
+        </div>
+       </div>
+
+       <span class="uib_shim"></span>
+      </div>
+     </div>
+     <!-- /upage-content -->
+
+     <div class="inner-element uib_w_6 uib_sidebar leftbar bar-bg thumb-bg bar-gutter swipe fixed" data-uib="layout/left_sidebar"
+     data-ver="0" data-anim="{'style':'squeeze', 'v':200, 'side':'left', 'dur':600, 'io':true}">
+      <div class="sidebar-content">
+
+       <div class="grid grid-pad urow uib_row_1 row-height-1" data-uib="layout/row" data-ver="0">
+        <div class="col uib_col_1 col-0_9-12" data-uib="layout/col" data-ver="0">
+         <div class="widget-container content-area vertical-col center">
+
+
+          <span class="uib_shim"></span>
+         </div>
+        </div>
+        <div class="col uib_col_4 col-0_3-12" data-uib="layout/col" data-ver="0">
+         <div class="widget-container content-area center-h-v-col">
+          <button type="button" class="btn widget uib_w_4 d-margins icon_margin btn-info" data-uib="twitter%20bootstrap/button" data-ver="0"><i class="glyphicon glyphicon-arrow-left" data-position="icon only"></i>
+          </button><span class="uib_shim"></span>
+         </div>
+        </div>
+        <span class="uib_shim"></span>
+       </div>
+
+
+
+
+
+
+       <div class="grid grid-pad urow uib_row_3 row-height-3" data-uib="layout/row" data-ver="0">
+        <div class="col uib_col_5 col-0_12-12" data-uib="layout/col" data-ver="0">
+         <div class="widget-container content-area vertical-col">
+          <a class="uib-graphic-button default-graphic-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_9 d-margins"
+          data-uib="media/graphic_button" data-ver="0" href="http://localhost/MyAcctgSys_Web/(06)Interface/MyPortal_accountant/index.html##mainsub">
+           <img src="img/home.png">
+
+
+           <span class="uib-caption"></span>
+          </a><span class="uib_shim"></span>
+         </div>
+        </div>
+        <span class="uib_shim"></span>
+       </div>
+      </div>
+     </div>
+
+    </div>
+    <!-- /upage-outer -->
+
+   </div>
+   <!-- /upage -->
+
+  </div>
+  <!-- /uwrap -->
+ </body>
+
+</html>
