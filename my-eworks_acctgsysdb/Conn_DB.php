@@ -3,7 +3,7 @@
 
 // Database Connection Setting
 
-$dbhost = "127.5.153.129"; // Host name 
+$dbhost = "localhost"; // Host name 
 $dbport = "3306"; // Host port
 $dbusername = "lorealei"; // Mysql username 
 $dbpassword = ""; // Mysql password 
